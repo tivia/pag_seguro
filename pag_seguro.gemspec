@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
   s.add_dependency('activesupport')
   s.add_dependency('haml', '!= 3.1.5')
   s.add_dependency('nokogiri')
-  s.add_dependency('rest-client', '~> 1.8')
+  s.add_dependency('rest-client', '~> 2.1')
 end

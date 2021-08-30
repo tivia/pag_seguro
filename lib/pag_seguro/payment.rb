@@ -111,7 +111,7 @@ module PagSeguro
         raise Errors::Unauthorized if res.code == 401
         raise Errors::InvalidData.new(res.body) if res.code == 400
         raise Errors::UnknownError.new(res) if res.code != 200
-        @response = res.body
+        @response = res
       end
 
       def parse_date
